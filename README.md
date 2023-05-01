@@ -24,3 +24,5 @@ require("orgmode").setup({
   },
 })
 ```
+
+<img width="1440" alt="Screenshot 2023-05-01 at 18 45 15" src="https://user-images.githubusercontent.com/57654917/235480782-dcb6b607-73f0-4882-a882-1d4e05015997.png">
