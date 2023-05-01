@@ -25,4 +25,4 @@ require("orgmode").setup({
 })
 ```
 
-![Screenshot 2023-05-01 at 23 57 55](https://user-images.githubusercontent.com/57654917/235530013-125c4108-1354-4871-9423-2520975ab866.png)
+![Screenshot 2023-05-01 at 23 59 08](https://user-images.githubusercontent.com/57654917/235530277-94bbd233-4030-4fe5-83bd-91c0f133bd00.png)
