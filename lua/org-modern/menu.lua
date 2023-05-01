@@ -1,7 +1,20 @@
 local Menu = {}
 
+local default_config = {
+  window = {
+    margin = { 1, 0, 1, 0 },
+    padding = { 0, 1, 0, 1 },
+    title_pos = "center",
+    border = "single",
+    zindex = 1000,
+  },
+  icons = {
+    separator = "➜",
+  },
+}
+
 function Menu:new(config)
-  config = config or {}
+  config = vim.tbl_deep_extend("force", default_config, config or {})
 
   local opts = {}
   opts.window = config.window
