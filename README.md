@@ -6,7 +6,7 @@ local Menu = require("org-modern.menu")
 require("orgmode").setup({
   ui = {
     menu = {
-      handler = function(title, items)
+      handler = function(data)
         Menu:new({
           window = {
             margin = { 1, 0, 1, 0 },
@@ -18,7 +18,7 @@ require("orgmode").setup({
           icons = {
             separator = "➜",
           },
-        }):open(title, items)
+        }):open(data)
       end,
     },
   },

@@ -114,9 +114,9 @@ function Menu:_close()
   vim.cmd.redraw()
 end
 
-function Menu:open(title, items)
-  local keys, content = self:_process_items(items)
-  self.window = self:_open_window(title, content)
+function Menu:open(data)
+  local keys, content = self:_process_items(data.items)
+  self.window = self:_open_window(data.title, content)
 
   local char = vim.fn.nr2char(vim.fn.getchar())
   self:_close()
