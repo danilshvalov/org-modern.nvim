@@ -1,4 +1,4 @@
-# `org-modern.nvim`
+<center><h1><code>org-modern.nvim</code></h1></center>
 
 ## About
 
