@@ -1,4 +1,6 @@
-<center><h1><code>org-modern.nvim</code></h1></center>
+<div align=center>
+  <h1><code>org-modern.nvim</code></h1>
+</div>
 
 ## About
 
