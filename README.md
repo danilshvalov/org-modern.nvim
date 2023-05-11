@@ -1,4 +1,26 @@
+# `org-modern.nvim`
+
+## About
+
+This plugin adds a modern style to Org mode buffers.
+
 ## Modern menu
+
+### Preview
+
+The menu is used when selecting further actions in `agenda`, `capture` and `export`.
+
+![Modern menu preview](https://github.com/danilshvalov/org-modern.nvim/assets/57654917/492fe346-46d5-486a-adbe-f2d4e3635503)
+
+### Configuration
+
+In order to use a modern menu based on floating windows, you need:
+
+1. Load the `org-modern.menu` module.
+2. Create an instance of the `menu` class via the `new` function.
+3. Use the modern menu inside the `handler` function in the `orgmode` configuration.
+
+Here is an example of `orgmode` configuration for using a modern menu:
 
 ```lua
 local Menu = require("org-modern.menu")
@@ -25,4 +47,13 @@ require("orgmode").setup({
 })
 ```
 
-![Screenshot 2023-05-01 at 23 59 08](https://user-images.githubusercontent.com/57654917/235530277-94bbd233-4030-4fe5-83bd-91c0f133bd00.png)
+The following is a description of the menu configuration options:
+
+- `window` (`table`) — used to configure the appearance of the menu window, the following options are available:
+  - `margin` (`table`) — size of the margins, they are set in the order `{top, right, bottom, left}`.
+  - `padding` (`table`) — size of the paddings, they are set in the order `{top, right, bottom, left}`.
+  - `title_pos` (`string`) — position of the title, the valid values are `left`, `center`, `right`.
+  - `border` (`string`) — border type, the valid values are `none`, `single`, `double`, `rounded`, `solid`, `shadow`.
+  - `zindex` (`number`) — stacking order (floats with higher `zindex` go on top on floats with lower indices), must be larger than zero.
+- `icons` (`table`) — used for configuring icons, the following options are available:
+  - `separator` (`string`) — icon used between key and label.
